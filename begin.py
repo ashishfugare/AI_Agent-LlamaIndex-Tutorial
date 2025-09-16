@@ -31,13 +31,15 @@ index = VectorStoreIndex.from_documents(
     documents, transformation=[SentenceSplitter(chunk_size=1028)]
 )
 
+##"I want to retrieve more context when I query"#
+
 
 
 # 4. Create an index (this will use your local embedding model)
 #index = VectorStoreIndex.from_documents(documents)
 
 # 5. Create a query engine (this will use your local Phi-3 model)
-query_engine = index.as_query_engine()
+query_engine = index.as_query_engine(similarity_top_k=5)
 
 # 6. Ask a question!
 response = query_engine.query(" IIT Computer Science major preparing for an off-campu what is forst step ? and what chucks were retreived")
