@@ -1,0 +1,35 @@
+### **doc2.txt — Technical Skill Preparation**
+
+For off-campus recruitment, **technical depth and breadth** make a candidate stand out.
+
+1. **Data Structures & Algorithms (DSA):**
+
+   * Platforms: LeetCode, Codeforces, AtCoder.
+   * Roadmap: Arrays → Strings → Linked Lists → Trees → Graphs → Dynamic Programming → Segment Trees → Advanced topics like Binary Indexed Trees, Flow Algorithms.
+   * Goal: 500+ quality problems solved, covering patterns.
+   * Example: “Solved 200+ medium and 50+ hard problems on LeetCode focusing on dynamic programming.”
+
+2. **System Design (HLD & LLD):**
+
+   * Study resources: “Grokking the System Design Interview,” Gaurav Sen’s YouTube series.
+   * Practice problems: Design a URL shortener, messaging queue, distributed cache, load balancer.
+   * Tools: Learn Docker, Kubernetes basics for modern system design awareness.
+
+3. **Core CS Subjects:**
+
+   * **Operating Systems:** Threads vs processes, memory management, scheduling algorithms.
+   * **DBMS:** Indexing, transactions, normalization, ACID properties.
+   * **Networks:** TCP vs UDP, OSI layers, HTTP/2, load balancing concepts.
+
+4. **Projects:**
+
+   * Distributed Key-Value Store → showcases systems understanding.
+   * Social Media Backend Clone → demonstrates scalability.
+   * AI-powered Chatbot → links AI/ML with software engineering.
+
+5. **Open Source Contributions:**
+
+   * Contribute to Apache Kafka, PyTorch, or React.
+   * Benefits: Improves GitHub presence, demonstrates teamwork in large codebases.
+
+---

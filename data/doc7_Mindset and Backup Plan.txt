@@ -1,0 +1,26 @@
+### **doc7.txt — Mindset and Backup Plan**
+
+Off-campus can be **brutal and rejection-heavy**. A balanced mindset ensures survival.
+
+1. **Patience & Consistency:**
+
+   * It may take 3–6 months of applying before success.
+   * Rejections are not a reflection of capability, but timing.
+
+2. **Backup Options:**
+
+   * Higher Studies: MS (US/Europe), MBA (IIMs, ISB).
+   * Freelancing: Web dev, AI/ML, backend engineering.
+   * Startup: Build with IIT peers (risk but high reward).
+
+3. **Continuous Learning:**
+
+   * AI/ML, Cloud (AWS, GCP, Azure), Distributed Systems.
+   * Stay updated with trends in fintech, AI, blockchain.
+
+4. **Mental Health:**
+
+   * Play sports, maintain hobbies, meditate.
+   * Avoid burnout during prep phase.
+
+---

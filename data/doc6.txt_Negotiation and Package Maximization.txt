@@ -1,0 +1,24 @@
+### **doc6.txt — Negotiation and Package Maximization**
+
+Many IIT graduates **settle too quickly**. Smart negotiation = higher pay.
+
+1. **Research:**
+
+   * Glassdoor, Levels.fyi, TeamBlind → know benchmarks.
+   * Example: At Microsoft India, SDE1 base \~18–20 LPA, total comp \~25 LPA+.
+
+2. **Multiple Offers:**
+
+   * Apply broadly to maximize options.
+   * Use one offer to negotiate another.
+
+3. **Negotiation Script:**
+
+   * “I’m very excited about this role. Based on my research and other opportunities, is there flexibility to move closer to \[X number]?”
+
+4. **Beyond Salary:**
+
+   * Signing bonus, joining bonus, relocation support.
+   * ESOPs and long-term equity.
+   * Work-from-home policies and learning stipends.
+

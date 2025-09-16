@@ -1,0 +1,29 @@
+### **doc4.txt — Job Search Strategy**
+
+Off-campus recruitment = **structured hustle**.
+
+1. **Referrals:**
+
+   * Reach out to IIT alumni. Example DM: “Hi \[Name], I’m a CSE student from IIT \[campus]. I admire your journey and was wondering if you could provide guidance or a referral for \[role].”
+   * Keep it short, polite, and professional.
+
+2. **Platforms:**
+
+   * **LinkedIn Jobs** → Filter by “Early Careers” or “0–2 years.”
+   * **AngelList/Wellfound** → For startups with equity options.
+   * **TripleByte** → Skills-based hiring.
+   * **YC Work at a Startup** → Exposure to global startups.
+   * **Company Career Pages** → Direct applications are underrated.
+
+3. **Application Tracker:**
+
+   * Use Notion/Excel with fields: `Company | Role | Date Applied | Referral | Status | Feedback`.
+   * This prevents duplication and gives visibility on progress.
+
+4. **Numbers Game:**
+
+   * Apply to **at least 10 quality jobs per week**.
+   * Expect a \~10% callback rate.
+   * Focus on quality over mass applications.
+
+---

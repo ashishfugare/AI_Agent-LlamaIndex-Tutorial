@@ -1,0 +1,49 @@
+**Self-Assessment and Goal Setting**
+
+As an IIT Computer Science major preparing for an off-campus job with a high package, the first step is **self-assessment** and clear goal setting.
+
+1. **Strengths:**
+
+   * Strong foundation in algorithms, data structures, and computer science fundamentals.
+   * Exposure to competitive programming through platforms like Codeforces and AtCoder.
+   * Academic pedigree from IIT, which provides credibility in the job market.
+
+2. **Weaknesses:**
+
+   * Possible lack of industry-level project exposure compared to peers with big internships.
+   * Communication and presentation skills may not be polished due to focus on technical academics.
+   * Over-reliance on coding contests, with limited applied development experience.
+
+3. **Role Preferences:**
+
+   * Software Engineer (Backend/Full-Stack).
+   * Data Engineer (for those strong in databases and pipelines).
+   * ML Engineer (if coursework and projects align with AI/ML).
+
+4. **Target Companies:**
+
+   * Big Tech/Product: Google, Microsoft, Amazon, Meta, Stripe, Databricks, NVIDIA.
+   * Scaled Startups: Cred, Razorpay, Zerodha, Zomato, Swiggy.
+   * Global Startups via remote work: Deel, Notion, GitHub.
+
+5. **SMART Goals (Specific, Measurable, Achievable, Relevant, Time-bound):**
+
+   * Crack at least 3 Tier-1 product company interviews within 9 months.
+   * Solve 500+ DSA problems before interviews.
+   * Publish 2 technical blogs and 3 open-source contributions within 6 months.
+
+> Self-assessment ensures clarity. Without knowing one’s strengths, weaknesses, and targets, random preparation leads to wasted effort.
+
+---
+
+
+
+
+
+
+
+---
+
+---
+
+

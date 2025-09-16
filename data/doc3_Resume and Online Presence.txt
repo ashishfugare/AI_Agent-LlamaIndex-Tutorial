@@ -1,0 +1,27 @@
+### **doc3.txt — Resume and Online Presence**
+
+A strong resume and online presence are **gateways** to interviews.
+
+1. **Resume:**
+
+   * Keep it **one page only**.
+   * Use bullet points starting with **action verbs** (“Developed,” “Optimized,” “Reduced”).
+   * Quantify achievements: “Reduced query latency by 30%,” “Handled 1000+ concurrent requests.”
+   * Add competitive achievements: ICPC regionals, Google Kickstart, Hackathons.
+   * Highlight **IIT pedigree** at the top.
+
+2. **LinkedIn Optimization:**
+
+   * Headline: *“IIT CSE | Software Engineer | Backend & Systems Enthusiast”*.
+   * About section: 4–5 lines summarizing skills, passion, and goals.
+   * Activity: Share coding blogs, post about projects, engage with alumni.
+   * Build 500+ meaningful connections, especially IIT alumni in tech companies.
+
+3. **GitHub Profile:**
+
+   * Pin top 3–4 projects.
+   * Clean commits and README files.
+   * Show activity streak (demonstrates consistency).
+   * Avoid “junk repos”; keep a professional profile.
+
+---
