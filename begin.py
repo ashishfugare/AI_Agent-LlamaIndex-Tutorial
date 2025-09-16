@@ -39,7 +39,7 @@ index = VectorStoreIndex.from_documents(
 #index = VectorStoreIndex.from_documents(documents)
 
 # 5. Create a query engine (this will use your local Phi-3 model)
-query_engine = index.as_query_engine(similarity_top_k=5)
+query_engine = index.as_query_engine(response_mode="tree_summarize")
 
 # 6. Ask a question!
 response = query_engine.query(" IIT Computer Science major preparing for an off-campu what is forst step ? and what chucks were retreived")
