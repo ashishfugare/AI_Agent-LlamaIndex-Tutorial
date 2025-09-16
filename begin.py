@@ -1,6 +1,16 @@
 from llama_index.core import VectorStoreIndex, SimpleDirectoryReader, Settings
 from llama_index.embeddings.huggingface import HuggingFaceEmbedding
 from llama_index.llms.ollama import Ollama
+from llama_index.core.node_parser import SentenceSplitter
+
+#default for chucking 
+Settings.chunk_size = 512 # new this "I want to parse my documents into smaller chunks
+
+#local Seetiings
+
+
+
+
 
 # 1. Set up the local models
 # Use your downloaded Phi-3 model through Ollama
@@ -16,14 +26,21 @@ Settings.embed_model = embed_model
 # 3. Load your data from the 'data' directory
 documents = SimpleDirectoryReader("./data").load_data()
 
+
+index = VectorStoreIndex.from_documents(
+    documents, transformation=[SentenceSplitter(chunk_size=1028)]
+)
+
+
+
 # 4. Create an index (this will use your local embedding model)
-index = VectorStoreIndex.from_documents(documents)
+#index = VectorStoreIndex.from_documents(documents)
 
 # 5. Create a query engine (this will use your local Phi-3 model)
 query_engine = index.as_query_engine()
 
 # 6. Ask a question!
-response = query_engine.query(" IIT Computer Science major preparing for an off-campu what is forst step ?")
+response = query_engine.query(" IIT Computer Science major preparing for an off-campu what is forst step ? and what chucks were retreived")
 
 # 7. Print the response
 print(response)
