@@ -28,7 +28,7 @@ documents = SimpleDirectoryReader("./data").load_data()
 
 
 index = VectorStoreIndex.from_documents(
-    documents, transformation=[SentenceSplitter(chunk_size=1028)]
+    documents, transformations=[SentenceSplitter(chunk_size=1028)]
 )
 
 ##"I want to retrieve more context when I query"#
@@ -39,13 +39,28 @@ index = VectorStoreIndex.from_documents(
 #index = VectorStoreIndex.from_documents(documents)
 
 # 5. Create a query engine (this will use your local Phi-3 model)
-query_engine = index.as_query_engine(response_mode="tree_summarize")
+# The fix is to add streaming=True
+# 1. Create a STANDARD query engine for regular Q&A and checking source nodes
+query_engine_standard = index.as_query_engine()
 
-# 6. Ask a question!
-response = query_engine.query(" IIT Computer Science major preparing for an off-campu what is forst step ? and what chucks were retreived")
+# 2. Create a SEPARATE STREAMING engine for real-time responses
+query_engine_streaming = index.as_query_engine(streaming=True)
 
-# 7. Print the response
-print(response)
+# --- NOW USE THE CORRECT ENGINE FOR EACH TASK ---
+
+# Use the standard engine to get a full response and check the chunks
+print("--- Retrieving Chunks ---")
+response = query_engine_standard.query("What is the first step for an IIT CS major...")
+print(f"LLM Response: {response}\n")
+for node in response.source_nodes:
+    print(f"Score: {node.score:.4f} | Content: {node.text[:100]}...")
+
+# Use the streaming engine for a real-time response
+print("\n--- Streaming Response ---")
+streaming_response = query_engine_streaming.query("What is the next step for off-campus prep?")
+for token in streaming_response.response_gen:
+    print(token, end="", flush=True)
+print()
 
 '''
 Reads all files from the "data" folder (could be .txt, .pdf, etc.).
