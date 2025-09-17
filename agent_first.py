@@ -1,49 +1,59 @@
-from llama_index.core.agent.workflow  import FunctionAgent
-#tools for LLM
+from dotenv import load_dotenv
 
-from llama_index.llms.ollama import Ollama
-
-
-llm = Ollama(model="phi3", request_timeout=120.0)
+load_dotenv()
 
 
-def multiply(a:float ,b:float ) -> float:
-    """
-    Multiplies two numbers, a and b.
-    Use this tool for multiplication.
-    """
 
-    return a*b
+import os
+import asyncio
+from llama_index.llms.google_genai import GoogleGenAI
+# Import both AgentRunner and ReActAgent
 
-def add(a:float ,b:float) -> float :
-    """
-    Adds two numbers, a and b.
-    Use this tool for addition.
-    """
-    """
-    THis type of Docstring is needed for agent to understand this
-    """
-    return a+b
+from llama_index.core.agent.workflow import FunctionAgent
 
+# 1. Load your Hugging Face API key
+try:
+    api_token = os.getenv("GOOGLE_API_KEY")
+    print(f"DEBUG: Read GOOGLE_API_KEY = {api_token}")
+    HF_TOKEN = os.environ["GOOGLE_API_KEY"]
+except KeyError:
+    raise ValueError("Please set the GOOGLE_API_KEY environment variable.")
 
-#agent woll use tools nmae , parameters and docstring to deterimine what too to 
-
-#create our agetn and system promot for what type of agent to be 
-
-workflow = FunctionAgent(
-    tools = [multiply,add],
-    llm=llm,
-    system_prompt = "You are an agent that can perform basic mathematical operations"
-
+# 2. Set up the LLM from Hugging Face
+llm = GoogleGenAI(
+    model="gemini-2.5-flash",
+    token=HF_TOKEN
 )
 
+# --- Your Tools ---
+def multiply(a: float, b: float) -> float:
+    """Multiplies two numbers, a and b."""
+    print(f"Calling multiply with: a={a}, b={b}")
+    return a * b
+
+def add(a: float, b: float) -> float:
+    """Adds two numbers, a and b."""
+    print(f"Calling add with: a={a}, b={b}")
+    return a + b
+
+#initilaizie the agent
+
+workflow = FunctionAgent(
+    tools=[multiply ,add ],
+    llm=llm,
+    system_prompt="YOu are an agnet that can perform basic arithmatic operation using tools"
+)
+
+
 async def main():
-    response = await workflow.run(user_msg="What is 20*(4+2)")
+    response = await workflow.run(user_msg="what is 20+(2*4)?")
     print(response)
 
-if __name__ == "__main__":
-    import asyncio
-    
-    asyncio.run(main())
 
 
+if __name__== "__main__":
+   
+    try:
+        asyncio.run(main())
+    except Exception as e:
+        print(f"an erro occured:{e}")    
